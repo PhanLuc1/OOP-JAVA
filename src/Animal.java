@@ -1,12 +1,12 @@
 public class Animal {
-    private String species;
-    public Animal(String species) {
-        this.species = species;
+    private String specie;
+    public Animal(String specie) {
+        this.specie = specie;
     }
-    public String getSpecies() {
-        return species;
+    public String getSpecie() {
+        return specie;
     }
-    public void setSpecies(String species) {
-        this.species = species;
+    public void setSpecie(String specie) {
+        this.specie = specie;
     }
 }
