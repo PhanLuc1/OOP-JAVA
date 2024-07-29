@@ -59,4 +59,11 @@ public abstract class Student {
     public void setGradeLevel(String gradeLevel) {
         this.gradeLevel = gradeLevel;
     }
+    @Override
+    public String toString() {
+        return String.format("Full Name: %s\nDate of Birth: %s\nSex: %s\nPhone Number: %s\n" +
+                        "University: %s\nGrade Level: %s",
+                fullName, doB.toString(), sex, phoneNumber, universityName, gradeLevel);
+    }
+    public abstract void showMyInfor();
 }

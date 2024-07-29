@@ -60,4 +60,8 @@ public class DoB {
     private boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
+    @Override
+    public String toString() {
+        return String.format("%02d/%02d/%d", doB, moB, yoB);
+    }
 }
