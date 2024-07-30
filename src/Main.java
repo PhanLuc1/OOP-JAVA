@@ -41,7 +41,7 @@ public class Main {
                         System.out.print("Entry Test Score: ");
                         double entryTestScore = sc.nextDouble();
                         sc.nextLine();
-                        NormalStudent newNormalStudent = new NormalStudent(fullName,new DoB(dob),gender,phoneNumber,universityName,gradeLevel,englishScore,entryTestScore);
+                        NormalStudent newNormalStudent = new NormalStudent(fullName,new DoB(dob),gender,phoneNumber,"NORMAL",gradeLevel,englishScore,entryTestScore);
                         students.add(newNormalStudent);
                         normalStudents.add(newNormalStudent);
                         break;
@@ -66,7 +66,7 @@ public class Main {
                         sc.nextLine();
                         System.out.print("Best Reward Name: ");
                         String bestRewardName = sc.nextLine();
-                        GoodStudent newGoodStudent = new GoodStudent(fullName,new DoB(dob),gender,phoneNumber,universityName,gradeLevel,averageGPA,bestRewardName);
+                        GoodStudent newGoodStudent = new GoodStudent(fullName,new DoB(dob),gender,phoneNumber,universityName,"GOOD",averageGPA,bestRewardName);
                         students.add(newGoodStudent);
                         goodStudents.add(newGoodStudent);
                         break;
