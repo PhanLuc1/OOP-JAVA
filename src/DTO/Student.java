@@ -8,20 +8,13 @@ public abstract class Student {
     private String universityName;
     private String gradeLevel;
     public Student() {}
-    public Student(int id, String fullName, DoB doB, String sex, String phoneNumber, String universityName, String gradeLevel) {
-        this.id = id;
+    public Student(String fullName, DoB doB, String sex, String phoneNumber, String universityName, String gradeLevel) {
         this.fullName = fullName;
         this.doB = doB;
         this.sex = sex;
         this.phoneNumber = phoneNumber;
         this.universityName = universityName;
         this.gradeLevel = gradeLevel;
-    }
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
     }
     public String getFullName() {
         return fullName;

@@ -3,9 +3,9 @@ public class NormalStudent extends Student{
     private double englishScore;
     private double entryTestScore;
     public NormalStudent() {}
-    public NormalStudent(int id, String name, DoB doB, String sex,String phoneNumber, String universityName, String gradeLevel, float englishScore, float entryTestScore) {
-        super(id, name, doB, sex, phoneNumber, universityName, gradeLevel);
-        if ((englishScore >= 1.0 && englishScore <= 9.0) && (entryTestScore >= 0.0 && entryTestScore <= 10.0) && super.getGradeLevel().equals("NORMAL")) {
+    public NormalStudent(String name, DoB doB, String sex, String phoneNumber, String universityName, String gradeLevel, double englishScore, double entryTestScore) {
+        super(name, doB, sex, phoneNumber, universityName, gradeLevel);
+        if (!(englishScore < 1 || englishScore > 9.0) && !(entryTestScore < 0.0 || entryTestScore > 10.0) && super.getGradeLevel().equals("NORMAL")) {
             this.englishScore = englishScore;
             this.entryTestScore = entryTestScore;
         } else {

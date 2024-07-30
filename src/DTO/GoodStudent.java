@@ -4,9 +4,9 @@ public class GoodStudent extends Student{
     private String bestRewardName;
     public GoodStudent(){
     }
-    public GoodStudent(int id, String name, DoB doB, String sex,String phoneNumber, String universityName, String gradeLevel, double averageGPA, String bestRewardName){
-        super(id, name, doB, sex, phoneNumber, universityName, gradeLevel);
-        if (averageGPA >= 0.0 && averageGPA <= 4.0 && super.getGradeLevel().equals("GOOD")) {
+    public GoodStudent(String fullName, DoB doB, String sex,String phoneNumber, String universityName, String gradeLevel, double averageGPA, String bestRewardName){
+        super( fullName, doB, sex, phoneNumber, universityName, gradeLevel);
+        if (!(averageGPA < 0.0 || averageGPA > 4.0) && super.getGradeLevel().equals("GOOD")) {
             this.averageGPA = averageGPA;
             this.bestRewardName = bestRewardName;
         } else {
